@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/66756b7b3b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div >
+        <div class="body-text"><h1>Translator</h1>
+            <input type="checkbox" id="toggle_checkbox">
+            <label for="toggle_checkbox">
+              <div id="star">
+                <div class="star" id="star-1">★</div>
+                <div class="star" id="star-2">★</div>
+              </div>
+              <div id="moon"></div>
+            </label> 
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-input">
+                    <textarea class="from-text" placeholder="Enter text"></textarea>
+                    <textarea class="to-text" placeholder="translation" readonly disabled></textarea>
+                </div>
+                <ul class="controls">
+                    <li class="row from">
+                        <div class="icons">
+                            <i id="from" class="fas fa-volume-up "></i>
+                            <i id="from" class="fas fa-copy"></i>
+                        </div>
+                        <select >                       
+                        </select>
+                    </li>    
+                    <li class="exchange"><i class="fas fa-exchange-alt"></i></li>  
+                    <li class="row to">
+                        <select >
+                        </select>
+                        <div class="icons">
+                            <i id="to" class="fas fa-volume-up"></i>
+                            <i id="to" class="fas fa-copy"></i>
+                        </div>
+                      
+                    </li>              
+                </ul>
+            </div>
+            <button class="btn">Translate Text</button>
+        </div>
+        </div>
+        
+        <script src="countries.js" ></script>
+        <script src="script.js"  defer></script>
+
+    </body>
+</html>
